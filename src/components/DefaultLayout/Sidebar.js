@@ -5,12 +5,12 @@ import { TbUsers } from 'react-icons/tb';
 import { RiLiveLine } from 'react-icons/ri';
 import { HiHashtag } from 'react-icons/hi'
 import { BsMusicNoteBeamed } from 'react-icons/bs'
-import Button from './Button';
+import Button from '../Button';
 
 const pagesHot = [
     {
         image:
-            'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/65d3c6b1d1e205c75536ccf1f26d552d~c5_100x100.jpeg?x-expires=1664503200&x-signature=54fv7pKsPieAZvewphZePqvxjYQ%3D',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIL0nP6e00uo1GGGBRZu88YgQxKiYSXctBKxMgqtjq1cqWZPk2fNF7WmAMWBCuA0HHVaE&usqp=CAU',
         name: 'theanh28entertainment',
         desc: 'Theanh28 Entertainment',
         follower: '7.4M',
@@ -19,7 +19,7 @@ const pagesHot = [
     },
     {
         image:
-            'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/fac92301a36c2275c99f393061ef04ca~c5_100x100.jpeg?x-expires=1664506800&x-signature=yAJu0VQ805sneT9WvO%2FZ1%2BV%2FulQ%3D',
+            'http://upload.webbnc.vn/upload/web/50/506940/product/2020/06/29/04/49/159344938652.png',
         name: 'tiin.vn',
         desc: 'Tiin.vn',
         follower: '7.3M',
@@ -28,7 +28,7 @@ const pagesHot = [
     },
     {
         image:
-            'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/39911deb09b62b80810dec42c0722bbd~c5_100x100.jpeg?x-expires=1664506800&x-signature=u%2BZMRX4a4OGmaNEiR1xOAsuhu8s%3D',
+            'https://img.freepik.com/premium-vector/female-user-profile-avatar-is-woman-character-screen-saver-with-emotions_505620-617.jpg',
         name: 'annhien_boiboi',
         desc: 'AnNhiên ❤️ BốiBối',
         follower: '10M',
@@ -139,7 +139,7 @@ const Sidebar = () => {
                                 key={index}
                                 className="relative flex items-center gap-3 cursor-pointer hover:bg-black/5 py-2 px-5 transition-all group"
                             >
-                                <img src={page.image} alt={page.image} className="w-8 h-8 object-cover rounded-full" />
+                                <img src={page.image} alt={page.image} className="w-8 h-8 object-cover rounded-full shadow-xl" />
                                 <div className="hidden xl:block">
                                     <p className="flex gap-1 items-center font-bold text-[16px]">
                                         {page.name}{' '}

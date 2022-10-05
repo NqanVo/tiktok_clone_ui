@@ -2,6 +2,7 @@ import React from 'react';
 
 const Button = (props) => {
     let width = null;
+    let Type = ""
     const color = props.color
     const colorText = color.text
     const colorBg = color.bg
@@ -15,14 +16,22 @@ const Button = (props) => {
         default: ;
     }
 
+    if (props.to)
+        Type = "a";
+    else
+        Type = "button";
+
     return (
-        <button
-            className={`${colorText} ${colorBg} ${colorBorder} ${width} ${colorHover} ${props.disabled && 'opacity-60'} border rounded-[4px] font-bold flex gap-2 justify-center items-center cursor-pointer transition-all`}
+        <Type
+            className={`cursor-pointer ${colorText} ${colorBg} ${colorBorder} ${width} ${colorHover} ${props.disabled && 'opacity-60 cursor-not-allowed'} border rounded-[4px] font-bold flex gap-2 justify-center items-center transition-all`}
             onClick={props.handleClick}
             disabled={props.disabled}
+
+            href={props.to}
+            target="_blank"
         >
             {props.children}
-        </button>
+        </Type>
     );
 };
 
